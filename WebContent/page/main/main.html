@@ -1,0 +1,29 @@
+<nav ng-controller="mainController" class="navbar navbar-inverse" role="navigation" style="margin-bottom: 0;">
+    <div class="navbar-header">
+        <a class="navbar-brand" >AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li>
+            <a ui-sref="home">首页</a>
+        </li>
+        <li>
+            <a ui-sref="about">关于</a>
+        </li>
+        <li>
+            <a ui-sref="user">用户</a>
+        </li>
+        <li>
+            <a ui-sref="menu">菜单</a>
+        </li>
+    </ul>
+    <button ng-click="getUserList()">getlist</button>
+    <button ng-click="testEhcacheFun()">testEhcacheFun</button>
+    <button ng-click="deltestEhcacheFun()">deltestEhcacheFun</button>
+    <button ng-click="getUserRoleResources()">getUserRoleResources</button>
+    <button ng-click="getMenuList()">getMenuList</button>
+    <button ng-click="getMemoList()">getMemoList</button>
+    
+</nav>
+<div ui-view>
+	
+</div>
